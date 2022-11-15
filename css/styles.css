@@ -376,6 +376,11 @@ body {
   border-radius: 50%;
 }
 
+.modal-close-button:hover,
+.modal-close-button:focus {
+  fill: var(--third-color);
+}
+
 /* Advantages  */
 
 .advantages {
