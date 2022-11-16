@@ -69,6 +69,37 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <ul class="modal-list list">
+            <li class="item">
+              <label class="modal-label" for="">Ім'я</label>
+              <input class="modal-input" type="text" />
+            </li>
+            <li class="item">
+              <label class="modal-label" for="">Телефон</label>
+              <input class="modal-input" type="text" />
+            </li>
+            <li class="item">
+              <label class="modal-label" for="">Пошта</label>
+              <input class="modal-input" type="text" />
+            </li>
+            <li class="item">
+              <label class="modal-label" for="">Коментар</label>
+              <textarea
+                placeholder="Введіть текст"
+                class="modal-comment"
+                name=""
+                id=""
+                rows="5"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="modal-checkbox">
+            <input type="checkbox" />
+            <label for="">Погоджуюся з розсилкою та приймаю</label>
+            <a href="#">Умови договору</a>
+          </div>
+          <button class="modal-button" type="submit">Відправити</button>
         </div>
       </div>
 
@@ -429,7 +460,7 @@
 
           <li>
             <div class="footer-social-links">
-              <h2 class="social-link-title">ПРИЄДНУЙТЕСЬ</h2>
+              <h2 class="footer-title">ПРИЄДНУЙТЕСЬ</h2>
               <ul class="footer-social-icons list">
                 <li class="footer-social-item">
                   <a class="footer-social-link link" href="#">
@@ -460,6 +491,27 @@
                   </a>
                 </li>
               </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="subscription-form">
+              <label for="subscription" class="footer-title">Підпишіться на розсилку</label>
+              <div class="subscription">
+                <input
+                  placeholder="E-mail"
+                  class="subscription-input"
+                  id="subscription"
+                  name="subscription"
+                  type="email"
+                />
+                <button class="subscription-button" type="submit">
+                  Підписатися
+                  <svg class="subscription-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </li>
         </ul>
