@@ -72,47 +72,54 @@
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
           <ul class="modal-list list">
             <li class="item">
-              <label class="modal-label" for="">Ім'я</label>
+              <label class="modal-label" for="username">Ім'я</label>
               <div class="modal-input-field">
-                <input class="modal-input" type="text" />
+                <input name="username" class="modal-input" type="text" />
                 <svg class="input-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </div>
             </li>
             <li class="item">
-              <label class="modal-label" for="">Телефон</label>
+              <label class="modal-label" for="user-phone-number">Телефон</label>
               <div class="modal-input-field">
-                <input class="modal-input" type="text" />
+                <input name="user-phone-number" class="modal-input" type="tel" />
                 <svg class="input-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-phone2"></use>
                 </svg>
               </div>
             </li>
             <li class="item">
-              <label class="modal-label" for="">Пошта</label>
+              <label class="modal-label" for="user-email">Пошта</label>
               <div class="modal-input-field">
-                <input class="modal-input" type="text" />
+                <input name="user-email" class="modal-input" type="email" />
                 <svg class="input-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
               </div>
             </li>
             <li class="item">
-              <label class="modal-label" for="">Коментар</label>
+              <label class="modal-label" for="user-comment">Коментар</label>
               <textarea
                 placeholder="Введіть текст"
                 class="modal-comment"
-                name=""
-                id=""
+                name="user-comment"
+                id="user-comment"
                 rows="5"
               ></textarea>
             </li>
           </ul>
           <div class="modal-checkbox">
-            <input type="checkbox" />
-            <label for="">Погоджуюся з розсилкою та приймаю</label>
-            <a href="#">Умови договору</a>
+            <label class="terms-label" for="checkbox">
+              <input class="terms-checkbox" id="checkbox" name="checkbox" type="checkbox" />
+              <svg class="checkbox-icon" height="15" width="16">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+
+              Погоджуюся з розсилкою та приймаю</label
+            >
+
+            <a class="terms-link" href="#">Умови договору</a>
           </div>
           <button class="modal-button" type="submit">Відправити</button>
         </div>

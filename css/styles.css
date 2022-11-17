@@ -426,6 +426,8 @@ body {
   display: block;
   justify-content: flex-end;
   border-radius: 50%;
+
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-close:hover,
@@ -488,7 +490,7 @@ body {
 .input-icon {
   position: absolute;
   top: 50%;
-  left: 18px;
+  left: 20px;
   transform: translate(-50%, -50%);
 
   transition: fill 250ms var(--timing-function);
@@ -511,12 +513,52 @@ body {
 }
 
 .modal-checkbox {
-  text-align: center;
-  cursor: pointer;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.modal-checkbox > .a {
+.terms-checkbox {
+  appearance: none;
+}
+
+.checkbox {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.checkbox-icon {
+  margin-right: 7px;
+
+  border: 2px solid var(--secondary-color);
+  border-radius: 2px;
+
+  transition: background-color, fill 250ms var(--timing-function);
+}
+
+.terms-checkbox:checked + .checkbox-icon {
+  background-color: var(--third-color);
+  fill: var(--sixth-color);
+
+  border: none;
+}
+
+.terms-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.terms-link {
   color: var(--third-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 5px;
 }
 
 .modal-button {
