@@ -539,7 +539,6 @@ body {
 
 .terms-checkbox:checked + .checkbox-icon {
   background-color: var(--third-color);
-  fill: var(--sixth-color);
 
   border: none;
 }
